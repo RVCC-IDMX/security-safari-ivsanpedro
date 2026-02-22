@@ -1,23 +1,22 @@
 ## Vulnerability fixed
 
-<!-- What type of vulnerability is this? (e.g., XSS, code injection, hardcoded secret) -->
+This is an outdated dependency.
 
 ## Where was it?
 
-<!-- File path and line number where you found it -->
+The file path is package.json and it was in line 19. 
 
 ## Why is it dangerous?
 
-<!-- Explain what an attacker could do with this vulnerability -->
+An attacker could access sensitive data from the development server by tricking it into responding to malicious requests. 
 
 ## How did you fix it?
 
-<!-- Describe your fix and why it's secure -->
+I entered npm audit fix --force into the terminal which updated Vite to 7.3.1. 
 
 ## Screenshots (optional)
-
-<!-- Before/after screenshots showing the vulnerability and fix -->
-<!-- Tip: Take a screenshot, then paste (Ctrl+V / Cmd+V) directly here -->
+![Before:](<Screenshot 2026-02-20 at 7.29.58 PM.png>)
+![After:](<Screenshot 2026-02-20 at 7.30.45 PM.png>)
 
 ## Checklist
 
