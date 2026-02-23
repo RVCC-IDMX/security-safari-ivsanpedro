@@ -2,12 +2,12 @@ import { API_KEY } from "./config.js";
 
 // VULNERABILITY: innerHTML with user input
 function displayMessage(userInput) {
-  document.getElementById("output").innerHTML = userInput;
+  document.getElementById("output").textContent = userInput;
 }
 
 // VULNERABILITY: eval with user input
 function calculate(expression) {
-  return eval(expression);
+  return JSON.parse(expression);
 }
 
 // Wire up the poll form
