@@ -1,23 +1,19 @@
 ## Vulnerability fixed
 
-<!-- What type of vulnerability is this? (e.g., XSS, code injection, hardcoded secret) -->
+This was a secret in git history. 
 
 ## Where was it?
 
-<!-- File path and line number where you found it -->
+It can be found by entering git log in the terminal and itt will show previous commits. It showed that .env was removed, and that file contains hardcoded secrets. 
 
 ## Why is it dangerous?
 
-<!-- Explain what an attacker could do with this vulnerability -->
+It's dangerous because an attacker could get the API key. The attacker could pretend to be me and lock me out of the system completely. 
 
 ## How did you fix it?
 
-<!-- Describe your fix and why it's secure -->
+I deleted the .env file and created a new .env file and added it to gitignore. It's secure because now the keys are hidden. 
 
-## Screenshots (optional)
-
-<!-- Before/after screenshots showing the vulnerability and fix -->
-<!-- Tip: Take a screenshot, then paste (Ctrl+V / Cmd+V) directly here -->
 
 ## Checklist
 
