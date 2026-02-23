@@ -7,7 +7,7 @@ function displayMessage(userInput) {
 
 // VULNERABILITY: eval with user input
 function calculate(expression) {
-  return JSON.parse(expression);
+  return JSON.parse(expression);qui
 }
 
 // Wire up the poll form
