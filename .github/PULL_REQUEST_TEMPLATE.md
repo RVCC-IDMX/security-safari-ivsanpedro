@@ -12,7 +12,6 @@ The keys that are in config.js grant access to a service, account, or system. An
 
 ## How did you fix it?
 
-<!-- Describe your fix and why it's secure -->
 I created a .env file, stored the secrets in there, then put the file into gitignore so Git doesn't track it. It's secure because the actual secrets do not appear in the source files. 
 
 ## Screenshots (optional)
