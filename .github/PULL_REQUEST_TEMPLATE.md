@@ -1,23 +1,25 @@
 ## Vulnerability fixed
 
-<!-- What type of vulnerability is this? (e.g., XSS, code injection, hardcoded secret) -->
+This is a hardcoded secret. 
 
 ## Where was it?
 
-<!-- File path and line number where you found it -->
+It is in config.js, lines three and four. 
 
 ## Why is it dangerous?
 
-<!-- Explain what an attacker could do with this vulnerability -->
+The keys that are in config.js grant access to a service, account, or system. An attacker can use those credentials to get into other systems or use the sensitive data. 
 
 ## How did you fix it?
 
 <!-- Describe your fix and why it's secure -->
+I created a .env file, stored the secrets in there, then put the file into gitignore so Git doesn't track it. It's secure because the actual secrets do not appear in the source files. 
 
 ## Screenshots (optional)
 
-<!-- Before/after screenshots showing the vulnerability and fix -->
-<!-- Tip: Take a screenshot, then paste (Ctrl+V / Cmd+V) directly here -->
+![Before:](<Screenshot 2026-02-22 at 9.51.46 PM.png>)
+![After:](image.png)
+
 
 ## Checklist
 
