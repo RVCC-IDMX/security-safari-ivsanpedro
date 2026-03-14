@@ -1,25 +1,19 @@
 ## Vulnerability fixed
 
-This is an XSS vulnerability. 
+This was a secret in git history. 
 
 ## Where was it?
 
-It was in index.js, line 5. 
+It can be found by entering git log in the terminal and itt will show previous commits. It showed that .env was removed, and that file contains hardcoded secrets. 
 
 ## Why is it dangerous?
 
-An attacker could write code as input, and the browser will run the code. The attacker could get my login information, get my password, or make the whole page disappear. 
+It's dangerous because an attacker could get the API key. The attacker could pretend to be me and lock me out of the system completely. 
 
 ## How did you fix it?
 
-I replaced innerHTML with textContent. The browser now treats the input as simple text and not code to be ran. 
+I deleted the .env file and created a new .env file and added it to gitignore. It's secure because now the keys are hidden. 
 
-## Screenshots (optional)
-
-<!-- Before/after screenshots showing the vulnerability and fix -->
-<!-- Tip: Take a screenshot, then paste (Ctrl+V / Cmd+V) directly here -->
-![Before:](<Screenshot 2026-02-22 at 10.44.06 PM.png>)
-![After:](<Screenshot 2026-02-22 at 10.46.23 PM.png>)
 
 ## Checklist
 
