@@ -1,24 +1,25 @@
 ## Vulnerability fixed
 
-This is a hardcoded secret. 
+It is an XSS vulnerability.
 
 ## Where was it?
 
-It is in config.js, lines three and four. 
+It was on line 10 of index.js.
 
 ## Why is it dangerous?
 
-The keys that are in config.js grant access to a service, account, or system. An attacker can use those credentials to get into other systems or use the sensitive data. 
+<!-- Explain what an attacker could do with this vulnerability -->
+An attacker could insert code and the browser will evaluate it. They could enter code that returns your password. Whatever they type becomes code that runs in the app. 
 
 ## How did you fix it?
 
-I created a .env file, stored the secrets in there, then put the file into gitignore so Git doesn't track it. It's secure because the actual secrets do not appear in the source files. 
+<!-- Describe your fix and why it's secure -->
+I replaced eval with JSON.parse. It only reads the data in the JSON format and it cannot execute code. 
 
 ## Screenshots (optional)
 
-![Before:](<Screenshot 2026-02-22 at 9.51.46 PM.png>)
-![After:](image.png)
-
+![Before:](<Screenshot 2026-02-22 at 11.00.52 PM.png>)
+![After:](<Screenshot 2026-02-22 at 11.01.05 PM.png>)
 
 ## Checklist
 

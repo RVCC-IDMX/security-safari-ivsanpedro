@@ -13,13 +13,13 @@ Track your progress through the hunt.
 
 Each vulnerability gets its own branch and PR. Use the PR template to document each fix.
 
-- [ ] **Vulnerability 1:** Outdated dependency with CVE
-  - [X] Found it
-  - [X] Branch: `fix/outdated-dependency`
+- [X] **Vulnerability 1:** Outdated dependency with CVE
+  - [ ] Found it
+  - [ ] Branch: `fix/outdated-dependency`
   - [ ] PR created (template filled out) and merged
   - [ ] Badge added: `![Dependencies](https://img.shields.io/badge/✓_Dependencies-Fixed-228B22)`
 
-- [ ] **Vulnerability 2:** Hardcoded secret in source code
+- [X] **Vulnerability 2:** Hardcoded secret in source code
   - [ ] Found it
   - [ ] Branch: `fix/hardcoded-secret`
   - [ ] PR created (template filled out) and merged
@@ -31,13 +31,13 @@ Each vulnerability gets its own branch and PR. Use the PR template to document e
   - [ ] PR created (template filled out) and merged
   - [ ] Badge added: `![Git History](https://img.shields.io/badge/✓_Git_History-Cleaned-228B22)`
 
-- [ ] **Vulnerability 4:** XSS vulnerability
+- [X] **Vulnerability 4:** XSS vulnerability
   - [ ] Found it
   - [ ] Branch: `fix/xss-vulnerability`
   - [ ] PR created (template filled out) and merged
   - [ ] Badge added: `![XSS](https://img.shields.io/badge/✓_XSS-Patched-228B22)`
 
-- [ ] **Vulnerability 5:** Code injection vulnerability
+- [X] **Vulnerability 5:** Code injection vulnerability
   - [ ] Found it
   - [ ] Branch: `fix/eval-injection`
   - [ ] PR created (template filled out) and merged
