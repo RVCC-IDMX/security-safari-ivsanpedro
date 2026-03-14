@@ -14,8 +14,8 @@ Track your progress through the hunt.
 Each vulnerability gets its own branch and PR. Use the PR template to document each fix.
 
 - [ ] **Vulnerability 1:** Outdated dependency with CVE
-  - [ ] Found it
-  - [ ] Branch: `fix/outdated-dependency`
+  - [X] Found it
+  - [X] Branch: `fix/outdated-dependency`
   - [ ] PR created (template filled out) and merged
   - [ ] Badge added: `![Dependencies](https://img.shields.io/badge/✓_Dependencies-Fixed-228B22)`
 
