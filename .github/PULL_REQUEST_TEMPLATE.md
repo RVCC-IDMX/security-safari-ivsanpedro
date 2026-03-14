@@ -1,22 +1,24 @@
 ## Vulnerability fixed
 
-This is an outdated dependency.
+This is a hardcoded secret. 
 
 ## Where was it?
 
-The file path is package.json and it was in line 19. 
+It is in config.js, lines three and four. 
 
 ## Why is it dangerous?
 
-An attacker could access sensitive data from the development server by tricking it into responding to malicious requests. 
+The keys that are in config.js grant access to a service, account, or system. An attacker can use those credentials to get into other systems or use the sensitive data. 
 
 ## How did you fix it?
 
-I entered npm audit fix --force into the terminal which updated Vite to 7.3.1. 
+I created a .env file, stored the secrets in there, then put the file into gitignore so Git doesn't track it. It's secure because the actual secrets do not appear in the source files. 
 
 ## Screenshots (optional)
-![Before:](<Screenshot 2026-02-20 at 7.29.58 PM.png>)
-![After:](<Screenshot 2026-02-20 at 7.30.45 PM.png>)
+
+![Before:](<Screenshot 2026-02-22 at 9.51.46 PM.png>)
+![After:](image.png)
+
 
 ## Checklist
 
