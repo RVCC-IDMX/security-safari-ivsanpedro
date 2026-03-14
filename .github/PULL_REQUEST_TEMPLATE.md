@@ -1,19 +1,22 @@
 ## Vulnerability fixed
 
-This was a secret in git history. 
+This is an outdated dependency.
 
 ## Where was it?
 
-It can be found by entering git log in the terminal and itt will show previous commits. It showed that .env was removed, and that file contains hardcoded secrets. 
+The file path is package.json and it was in line 19. 
 
 ## Why is it dangerous?
 
-It's dangerous because an attacker could get the API key. The attacker could pretend to be me and lock me out of the system completely. 
+An attacker could access sensitive data from the development server by tricking it into responding to malicious requests. 
 
 ## How did you fix it?
 
-I deleted the .env file and created a new .env file and added it to gitignore. It's secure because now the keys are hidden. 
+I entered npm audit fix --force into the terminal which updated Vite to 7.3.1. 
 
+## Screenshots (optional)
+![Before:](<Screenshot 2026-02-20 at 7.29.58 PM.png>)
+![After:](<Screenshot 2026-02-20 at 7.30.45 PM.png>)
 
 ## Checklist
 
