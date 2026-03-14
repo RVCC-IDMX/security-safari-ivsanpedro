@@ -31,6 +31,7 @@ Use [CHECKLIST.md](CHECKLIST.md) to track your progress through each vulnerabili
 
 After completing your hunt, submit:
 
+
 1. **Five pull requests** - Create a separate branch and PR for each fix:
    - Use the `fix/` prefix (e.g., `fix/xss-vulnerability`)
    - Fill out the PR template to document the vulnerability and fix
